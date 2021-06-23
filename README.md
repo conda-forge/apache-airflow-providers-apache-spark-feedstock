@@ -40,6 +40,7 @@ Installing `apache-airflow-providers-apache-spark` from the `conda-forge` channe
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `apache-airflow-providers-apache-spark` can be installed with:
