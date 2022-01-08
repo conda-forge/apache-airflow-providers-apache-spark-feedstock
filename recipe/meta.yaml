@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-spark" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-apache-spark-{{ version }}.tar.gz
-  sha256: bf62c6311b15317222d4f23d17eabab0f74a7503e7565c9775b23da6b61ec7e4
+  sha256: a6ebc5a24958a727d2c2c3f0a8db0be634cfedfd327c319baacf6a58653873c6
 
 build:
   number: 0
@@ -16,14 +16,13 @@ build:
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.6
     - setuptools
-    - wheel
   run:
+    - python >=3.7
     - apache-airflow >=2.1.0
     - pyspark
-    - python >=3.6
 
 test:
   imports:
