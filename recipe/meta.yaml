@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-spark" %}
-{% set version = "4.3.0" %}
+{% set version = "4.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-apache-spark-{{ version }}.tar.gz
-  sha256: bab80a76c610dbcb9acfb44006a1c94421a2328e98a568a690b5d76d7fee33a6
+  sha256: 6a02f3309582297f800897d3de7399dc00e8ffea50d89f5557d1938904453deb
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
 test:
   imports:
     - airflow.providers.apache.spark
-    - airflow.providers.apache.spark.hooks
+    - airflow.providers.apache.spark.decorators
   commands:
     - pip check
   requires:
