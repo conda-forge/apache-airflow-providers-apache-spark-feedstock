@@ -20,10 +20,9 @@ requirements:
     - flit-core >=3.2,<4
     - pip
   run:
-    - grpcio-status >=1.59.0
     - python >=3.8
     - apache-airflow >=2.6.0
-    - grpcio-status
+    - grpcio-status >=1.59.0
     - pyspark
 
 test:
