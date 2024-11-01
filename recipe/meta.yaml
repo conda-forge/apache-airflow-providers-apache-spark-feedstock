@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_spark-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_spark-{{ version }}.tar.gz
   sha256: 3e7841a0a2d2e0b27dba35d31deabf5191ce58ac0e2bc6335cb29875aa65d841
 
 build:
