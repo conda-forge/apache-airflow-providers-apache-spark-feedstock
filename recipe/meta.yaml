@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-spark" %}
-{% set version = "5.1.1" %}
+{% set version = "5.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_spark-{{ version }}.tar.gz
-  sha256: 8f922e183d7fbf76008fde78a6cbab1e3c0cd4a1e988010de4b54d5cbbf91e2a
+  sha256: 98017275afca740c66376a65ecc0f9cd1c160e6637901db96927297cb46d65bc
 
 build:
   noarch: python
