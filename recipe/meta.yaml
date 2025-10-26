@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-spark" %}
-{% set version = "5.3.2" %}
+{% set version = "5.3.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_spark-{{ version }}.tar.gz
-  sha256: fd0005f21b9b1b227c2eee2295530e05328022338ec3466c6b19497be08cda86
+  sha256: 1b38cda9a7121220a3db5a123f114b8452dbd10efc7d0571a5b00d5327b15b05
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
-    - apache-airflow-providers-common-compat >=1.5.0
+    - apache-airflow-providers-common-compat >=1.8.0
     - pyspark >=3.5.2
     - grpcio-status >=1.59.0
 
