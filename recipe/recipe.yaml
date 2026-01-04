@@ -30,7 +30,7 @@ requirements:
 tests:
   - python:
       imports:
-        - airflow.providers.apache.spark
+      - airflow.providers.apache.spark
       pip_check: true
       python_version: ${{ python_min }}.*
 
