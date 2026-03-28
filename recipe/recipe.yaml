@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-spark
-  version: 6.0.0
+  version: "6.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -24,8 +24,9 @@ requirements:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.12.0
-    - grpcio-status >=1.67.0
     - pyspark-client >=4.0.0
+    - grpcio-status >=1.67.0
+
 tests:
   - python:
       imports:
