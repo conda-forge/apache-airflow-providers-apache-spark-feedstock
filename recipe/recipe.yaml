@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-spark
-  version: "6.0.2"
+  version: "6.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_apache_spark-${{ version }}.tar.gz
-  sha256: 09486f85a21934ed424c2b584fd8899a73c8e6f318d0d5b6d711cce3a3817445
+  sha256: 8839b426183455ec74e9a4a65685cf4fb53740b2fa0cd9389968c1762c9ac303
 
 build:
   noarch: python
@@ -26,6 +26,8 @@ requirements:
     - apache-airflow-providers-common-compat >=1.12.0
     - pyspark-client >=4.0.0
     - grpcio-status >=1.67.0
+    - requests >=2.32.0
+    - tenacity >=8.3.0
 
 tests:
   - python:
