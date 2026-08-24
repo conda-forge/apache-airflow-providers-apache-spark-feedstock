@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-spark
-  version: "6.3.1"
+  version: "6.3.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_apache_spark-${{ version }}.tar.gz
-  sha256: 1b782aed8f973719fd77fe3c3553724241ec512c70171eb261dc2b5c14bc2e42
+  sha256: 0eb2207c0960c5701e1b61632060c0c4633c72c04b9a2fcae880567ba6fbbbf8
 
 build:
   noarch: python
